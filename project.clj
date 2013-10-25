@@ -1,9 +1,10 @@
-(defproject domina "1.0.2-SNAPSHOT"
+(defproject org.clojars.magomimmo/domina "1.0.3-SNAPSHOT"
   :description "A DOM manipulation library for ClojureScript inspired by JQuery"
+  :min-lein-version "2.1.2"
   :source-paths ["src/cljs"]
-  :dependencies [[org.clojure/clojure "1.4.0"]]
-  :plugins [[lein-cljsbuild "0.3.0"]
-            [lein-clojars "0.9.1"]]
+  :dependencies [[org.clojure/clojure "1.5.1"]
+                 [org.clojure/clojurescript "0.0-1847"]]
+  :plugins [[lein-cljsbuild "0.3.4"]]
   :hooks [leiningen.cljsbuild]
   :cljsbuild {:builds [{:jar true
                         :compiler {:libs ["goog/dom/query.js"]
@@ -33,15 +34,6 @@
                                     :optimizations :advanced
                                     :pretty-print true
                                     :output-dir ".cljsbuild/advanced"
-                                    :output-to "public/test_advanced.js"}}]}
-  :repositories {"sonatype-staging"
-                 "https://oss.sonatype.org/content/groups/staging/"})
+                                    :output-to "public/test_advanced.js"}}]})
 
-(comment
-  (do
-    (require '[cljs.repl :as repl])
-    (require '[cljs.repl.browser :as browser])
-    (def env (browser/repl-env))
-    (repl/repl env))
 
-  )
