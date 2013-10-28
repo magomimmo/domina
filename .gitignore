@@ -7,7 +7,9 @@ lib
 pom.xml
 .lein-plugins
 .lein-failures
+.lein-repl-history
 /target
+/out
 *.*~
 \#*#
 .#*
