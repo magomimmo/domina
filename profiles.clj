@@ -1,7 +1,7 @@
 {:dev {:resources-paths ["dev-resources"]
        :test-paths ["test/clj" "test/tools"]
 
-       :dependecies [[ring "1.2.0"]
+       :dependencies [[ring "1.2.0"]
                      [compojure "1.1.5"]
                      [com.cemerick/piggieback "0.1.0"]]
 
