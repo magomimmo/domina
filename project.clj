@@ -6,7 +6,7 @@
   :dependencies [[org.clojure/clojure "1.5.1"]
                  [org.clojure/clojurescript "0.0-1847"]]
 
-  :plugins [[lein-cljsbuild "0.3.4"]]
+  :plugins [[lein-cljsbuild "1.0.0-SNAPSHOT"]]
 
   :hooks [leiningen.cljsbuild]
 
