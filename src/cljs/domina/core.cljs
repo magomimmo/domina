@@ -1,4 +1,4 @@
-(ns domina
+(ns domina.core
   (:require
    [goog.dom :as dom]
    [goog.dom.xml :as xml]
@@ -10,7 +10,8 @@
    [cljs.core :as core]
    [clojure.string :as cstring]
    [domina.support :as support])
-  (:require-macros [domina.macros :as dm]))
+  (:require-macros [domina.macros :as dm])
+  (:refer-clojure :exclude [clone]))
 
 ;;;;;;;;;;;;;;;;;;; Parse HTML to DOM ;;
 
