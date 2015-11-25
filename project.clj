@@ -3,6 +3,7 @@
   :min-lein-version "2.5.3"
 
   :source-paths ["src/clj"]
+  :clean-targets ^{:protect false} [:target-path "dev-resources/public/js"]
 
   :dependencies [[org.clojure/clojure "1.7.0"]
                  [org.clojure/clojurescript "1.7.170"]]

@@ -1,6 +1,5 @@
 {:dev {:resources-paths ["dev-resources"]
        :test-paths ["test/clj" "test/tools"]
-       :clean-targets ^{:protect false} [:target-path "dev-resources/public/js"]
        :dependencies [[ring "1.4.0"]
                      [compojure "1.4.0"]
                      [com.cemerick/piggieback "0.2.1"]]
