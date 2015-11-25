@@ -1,11 +1,11 @@
 {:dev {:resources-paths ["dev-resources"]
        :test-paths ["test/clj" "test/tools"]
+       :clean-targets ^{:protect false} [:target-path "dev-resources/public/js"]
+       :dependencies [[ring "1.4.0"]
+                     [compojure "1.4.0"]
+                     [com.cemerick/piggieback "0.2.1"]]
 
-       :dependencies [[ring "1.2.0"]
-                     [compojure "1.1.5"]
-                     [com.cemerick/piggieback "0.1.0"]]
-
-       :plugins [[com.cemerick/clojurescript.test "0.1.0"]]
+       :plugins [[com.cemerick/clojurescript.test "0.3.3"]]
 
        :cljsbuild
        {:builds {:whitespace
